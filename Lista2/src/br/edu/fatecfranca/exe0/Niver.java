@@ -11,10 +11,17 @@ import java.util.ArrayList;
  *
  * @author Daniel.Pires
  */
-public class Niver {
+public final class Niver {
    private int dia;
    private String mes;
    
+   public Niver(){
+       
+   }
+   public Niver(int dia, String mes){
+       setDia(dia);
+       setMes(mes);
+   }
    
    public void setDia(int dia){
        if ((dia >= 1) && (dia <= 31)){

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.edu.fatecfranca.exe0;
+package br.edu.fatecfranca.exe1;
 
 /**
  *
@@ -15,17 +15,11 @@ public class Teste {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        
-        Niver obj = new Niver();
-        obj.setDia(3);
-        obj.setDia(80);
-        obj.setDia(-3);
-        obj.setMes("Janeiro");
-        obj.setMes("Outono");
-        System.out.println("Dia " + obj.getDia() + " Mês " + obj.getMes());
-        
-        
+        Cliente obj1 = new Cliente("123456-7", "123-59", "Fulano", 0);
+        obj1.depositar(2000);
+        obj1.sacar(400);
+        obj1.sacar(500);
+        obj1.mostra();
     }
     
 }
