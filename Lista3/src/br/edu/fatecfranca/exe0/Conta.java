@@ -39,12 +39,17 @@ public class Conta {
     }
 
     public void setSaldo(float saldo) {
-        this.saldo = saldo;
+        if (saldo >= 0) {
+            this.saldo = saldo;
+        }
+        else {
+            System.out.println("Saldo não pode ficar negativo");
+        }
     }
     
     
-    public void mostra(){
-        System.out.println("Número" + this.numero +
+    public String mostra(){
+        return ("Número" + this.numero +
         " Agência " + this.agencia + " Nome: " +
         this.nome + " Saldo " + this.saldo);
     }
